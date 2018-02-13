@@ -5,11 +5,11 @@ def reverse_each_word(string)
 #  word.reverse().split(" ").reverse().join()
 #}
 
-  array = string.split(" ").collect {|word|
+  string.split(" ").collect {|word|
     word.reverse().split(" ").reverse().join()
-  }
+  }.join(" ")
 
-  array.join(" ")
+
   #array.collect. {|word|
   #  word.reverse().split(" ").reverse().join()
   #}
